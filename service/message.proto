@@ -1,0 +1,13 @@
+syntax = "proto3";
+package service;
+
+message RemoteMessage {
+  string MethodName = 1;
+  bytes Data = 2;
+  int32 Type = 3;
+}
+
+message Response {
+  string Error = 1;
+  bytes Data = 2;
+}
